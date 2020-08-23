@@ -1,0 +1,16 @@
+.main-content{
+    margin-top: 6vh;
+    display: grid;
+    grid-gap: 10px;
+
+}
+.main-content >div{
+    height: 20vh;
+    width: 85vw;
+}
+.main-content:nth-child(odd){
+    background-color: aquamarine;
+}
+.main-content:nth-child(even){
+    background-color: beige;
+}

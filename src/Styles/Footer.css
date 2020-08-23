@@ -1,0 +1,8 @@
+.footer{
+    background-color: purple;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    bottom:0;
+}

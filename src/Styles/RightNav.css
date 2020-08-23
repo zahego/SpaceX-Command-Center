@@ -1,0 +1,9 @@
+.right-nav{
+    background-color: green;
+    width: 14vw;
+    height:100vh;
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    top: 0;
+}

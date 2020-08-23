@@ -1,0 +1,24 @@
+.content{
+    background-color: pink;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    left: 0;
+}
+.main-content, .launch-content, .tweet-content{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 3;
+}
+.main-content{
+    height: 100%;
+    background-color: rgb(231, 169, 180);
+}
+.launch-content{
+    background-color: rgb(194, 144, 153);
+}
+.tweet-content{
+    background-color: rgb(168, 122, 129);
+}
