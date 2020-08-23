@@ -27,10 +27,10 @@ const urlCapsules=url.concat('/capsules');
 
 export const fetchSpaceXLaunch=async(timeline)=>{
     let newLaunchURL=urlLaunch;
-    if(timeline=="past") newLaunchURL=urlLaunchPast;
-    else if(timeline=="upcoming") newLaunchURL=urlLaunchUpcoming;
-    else if(timeline=="latest") newLaunchURL=urlLaunchLatest;
-    else if(timeline=="next") newLaunchURL=urlLaunchNext;
+    if(timeline==="past") newLaunchURL=urlLaunchPast;
+    else if(timeline==="upcoming") newLaunchURL=urlLaunchUpcoming;
+    else if(timeline==="latest") newLaunchURL=urlLaunchLatest;
+    else if(timeline==="next") newLaunchURL=urlLaunchNext;
     else if(timeline) newLaunchURL.concat('/'+timeline);
     try{
         //props must name data to work(even props doesnt work). possibly a await or get() thing
@@ -51,7 +51,6 @@ export const fetchSpaceXLaunch=async(timeline)=>{
             name:data.name,
             date_utc:data.date_utc,
             details:data.details,
-            capsules:data.capsules,
             cores:data.cores
         };
         return launchData;
@@ -64,7 +63,7 @@ export const fetchSpaceXLaunchPad=async(launchpad)=>{
     let newLaunchpadURL=urlLaunchPads;
     if(launchpad) newLaunchpadURL.concat('/'+urlLaunchPads);
     try{
-        const{data}=await axios.get(newLaunchpadURL);
+        //const{data}=await axios.get(newLaunchpadURL);
         const launchpadData={
             //fill info here
         };
@@ -78,7 +77,7 @@ export const fetchSpaceXPayload=async(payload)=>{
     let newPayloadURL=urlPayloads;
     if(payload) newPayloadURL.concat('/'+urlPayloads);
     try{
-        const{data}=await axios.get(newPayloadURL);
+        //const{data}=await axios.get(newPayloadURL);
         const payloadData={
             //fill info here
         };
@@ -92,7 +91,7 @@ export const fetchSpaceXRocket=async(rocket)=>{
     let newRocketURL=urlRockets;
     if(rocket) newRocketURL.concat('/'+urlRockets);
     try{
-        const{data}=await axios.get(newRocketURL);
+        //const{data}=await axios.get(newRocketURL);
         const rocketData={
             //fill info here
         };
@@ -106,7 +105,7 @@ export const fetchSpaceXShip=async(ship)=>{
     let newShipURL=urlShips;
     if(ship) newShipURL.concat('/'+urlShips);
     try{
-        const{data}=await axios.get(newShipURL);
+        //const{data}=await axios.get(newShipURL);
         const shipData={
             //fill info here
         };
@@ -120,7 +119,7 @@ export const fetchSpaceXCapsules=async(capsule)=>{
     let newCapsulesURL=urlCapsules;
     if(capsule) newCapsulesURL.concat('/'+urlCapsules);
     try{
-        const{data}=await axios.get(newCapsulesURL);
+       // const{data}=await axios.get(newCapsulesURL);
         const capsuleData={
             //fill info here
         };

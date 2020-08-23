@@ -6,7 +6,7 @@ import "../../../Styles/MainContent.css";
 
 export const MainContentLaunch=()=>{
     const [launchInfo, setLauchInfo]=useState([]);
-    let timeline="latest";
+   // let timeline="latest";
 
     //useEffect(async()=>{}) doesnt exist
     //if no second argument, useEffect is going to run endlessly
@@ -15,7 +15,8 @@ export const MainContentLaunch=()=>{
         const fetchAPILaunch=async()=>{
             //return of async function is a promise, not object or anything
             //dont forget the () at await
-            setLauchInfo(await fetchSpaceXLaunch(timeline));
+            //have to substitute latest with timeline later
+            setLauchInfo(await fetchSpaceXLaunch("latest"));
         };
         
         fetchAPILaunch();
