@@ -1,0 +1,6 @@
+export const Display_SpaceX_API_All_Launches='Display_SpaceX_API_All_Launches';
+export const Display_SpaceX_API_All_Launches_Past='Display_SpaceX_API_All_Launches_Past';
+export const Display_SpaceX_API_All_Launches_Upcoming='Display_SpaceX_API_All_Launches_Upcoming';
+export const Display_SpaceX_API_All_Launches_Latest='Display_SpaceX_API_All_Launches_Latest';
+export const Display_SpaceX_API_All_Launches_Next='Display_SpaceX_API_All_Launches_Next';
+export const Display_SpaceX_API_All_Launches_One='Display_SpaceX_API_All_Launches_One';
