@@ -4,3 +4,17 @@ export const Display_SpaceX_API_All_Launches_Upcoming='Display_SpaceX_API_All_La
 export const Display_SpaceX_API_All_Launches_Latest='Display_SpaceX_API_All_Launches_Latest';
 export const Display_SpaceX_API_All_Launches_Next='Display_SpaceX_API_All_Launches_Next';
 export const Display_SpaceX_API_All_Launches_One='Display_SpaceX_API_All_Launches_One';
+export const Search_SPaceX_API_Launch='Search_SPaceX_API_Launch';
+
+
+export const Display_SpaceX_API_Rockets='Display_SpaceX_API_Rockets';
+export const Search_SpaceX_API_Rocket='Search_SpaceX_API_Rocket';
+
+
+export const Display_News_API='Display_News_API';
+
+export const Display_Job_API='Display_Job_API';
+
+export const Display_SocialMedia_API_SpaceX='Display_SocialMedia_API_SpaceX';
+
+export const Display_Weather_API='Display_Weather_API';

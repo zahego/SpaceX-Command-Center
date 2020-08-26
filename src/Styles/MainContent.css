@@ -1,16 +1,79 @@
-.main-content{
-    margin-top: 6vh;
+.main-content {
+    margin: 6vh  0 0 0;
     display: grid;
-    grid-gap: 10px;
+    grid-template-columns: 23vw 22vw 43vw;
+    grid-template-rows: 70vh 45vh 65vh 40vh 30vh;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 15px;
+    align-content: stretch;
+    text-align: center;
+}
 
+.main-content>div {
+    height: 100%;
+    /*width: 100%;*/
+    background-color: rgb(44, 44, 42);
+    border-radius: 10px;
 }
-.main-content >div{
-    height: 20vh;
-    width: 85vw;
+
+.main-content>div:nth-child(odd) {
+    background-color: rgb(17, 17, 17);
 }
-.main-content:nth-child(odd){
-    background-color: aquamarine;
+
+
+.truncate {
+    height: 280px;
+    white-space: nowrap;
+    overflow: scroll;
 }
-.main-content:nth-child(even){
-    background-color: beige;
+
+.main-content-lanuch-banner {
+    height: 30vh;
+    opacity: 0.8;
+    background-position: 50% 65%;
+    background-repeat: no-repeat;
+    
+}
+.webmap{
+    height: 200px;
+    width: 22vw;
+    overflow: hidden;
+}
+.main-content-launch{
+    grid-column-start: 1;
+  grid-column-end:4;
+}
+.main-content-video{
+    grid-column-start: 1;
+  grid-column-end:3;
+}
+
+.main-content-Job{
+    grid-row-start: 4;
+    grid-row-end:  6;
+    
+}
+.main-content-Job a{
+    color: rgb(220, 231, 220);
+}
+
+.count-down{
+    color: white;
+    font-size: 80px;
+    padding-top: 40px;
+}
+.main-content-news{
+    text-align: left;
+    padding-left: 20px;
+}
+.main-content-news p{
+    line-height: 20px;
+}
+.main-content-news h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+    margin-top:5px;
+}
+
+.main-content-weather h3, h6{
+    padding-bottom: 0;
 }
