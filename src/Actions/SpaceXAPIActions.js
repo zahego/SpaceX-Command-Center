@@ -8,7 +8,6 @@ import {
     Display_SpaceX_API_Rockets,
     Search_SpaceX_API_Rocket
 } from './AllActionsType';
-import { SpaceX_API_reducer } from './../Reducers/SpaceXAPIReducers';
 
 //pass the payload to reducer for change
 //why not just skip the action and deliver the props directly to the reducer for change I wonder?

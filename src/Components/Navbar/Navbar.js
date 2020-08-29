@@ -7,8 +7,8 @@ export const Navbar=()=>{
         <div className="nav-bar">
             <span>SPACEX COMMNAND CENTER</span>
             <div>
-            {/*<Input style={{color: "rgb(220, 231, 198)"}}/>
-            <span>Search</span>*/}
+            <Input style={{color: "rgb(220, 231, 198)"}}/>
+            <span>Search</span>
             </div>
         </div>
     )

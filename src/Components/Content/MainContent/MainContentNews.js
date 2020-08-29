@@ -5,7 +5,7 @@ import "../../../Styles/Content.css";
 import "../../../Styles/MainContent.css";
 
 const MainContentNews = ({ News_API_reducer = [], onOpenLoad }) => {
-    useEffect(() => { onOpenLoad(); }, []);
+    useEffect(() => { onOpenLoad(); }, [onOpenLoad]);
     if (typeof (News_API_reducer[0]) !== "undefined") {
 
         return (

@@ -5,7 +5,7 @@ import "../../../Styles/Content.css";
 import "../../../Styles/MainContent.css";
 
 const MainContentJob = ({ Job_API_reducer = [], onOpenLoad }) => {
-    useEffect(() => { onOpenLoad(); }, []);
+    useEffect(() => { onOpenLoad(); }, [onOpenLoad]);
 
     if (typeof (Job_API_reducer[0]) !== "undefined") {
         return (

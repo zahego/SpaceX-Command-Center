@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { shallowEqualObjects } from "shallow-equal";
 //base URL
 const url = 'https://api.spacexdata.com/v3';
 

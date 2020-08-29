@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { loadModules } from 'esri-loader';
 import '../../../Styles/MainContent.css';
-import { Map, WebMap, WebScene } from '@esri/react-arcgis';
+import { Map/*, WebMap, WebScene*/} from '@esri/react-arcgis';
 
 const MapRendering = ({w, n, zoom}) => {
     const mapRef = useRef();

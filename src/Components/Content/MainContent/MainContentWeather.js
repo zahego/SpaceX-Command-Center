@@ -5,12 +5,12 @@ import "../../../Styles/Content.css";
 import "../../../Styles/MainContent.css";
 
 const MainContentWeather = ({ Weather_API_reducer = [], onOpenLoad }) => {
-    useEffect(() => { onOpenLoad("Hawthorne"); }, []);
+    useEffect(() => { onOpenLoad("Hawthorne"); }, [onOpenLoad]);
     if (typeof (Weather_API_reducer[0]) !== "undefined") {
 
         return (
             <div className="main-content-weather">
-                <img src={Weather_API_reducer[0].current.condition.icon} style={{width: "130px", height: "110px"}}></img>
+                <img src={Weather_API_reducer[0].current.condition.icon} style={{width: "130px", height: "110px"}} alt="img"></img>
                 <h3>{Weather_API_reducer[0].current.temp_c}˚C</h3>
                 <h6>{Weather_API_reducer[0].current.humidity}%</h6>
                 <h6>{Weather_API_reducer[0].location.localtime}</h6>

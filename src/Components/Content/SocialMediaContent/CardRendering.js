@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';

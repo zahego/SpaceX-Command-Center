@@ -7,8 +7,7 @@ import Countdown from "react-countdown";
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 
 const MainContentLaunch = ({ SpaceX_API_reducer = [], onOpenLoad }) => {
-    let changed=0;
-    useEffect(() => { onOpenLoad() }, []);
+    useEffect(() => { onOpenLoad() }, [onOpenLoad]);
     if (typeof (SpaceX_API_reducer[0]) !== "undefined") {
         let bg_img=SpaceX_API_reducer[0].links.flickr_images[0];
         if(typeof bg_img==='undefined'){
