@@ -1,68 +1,117 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## SpaceX Command Center
+[https://spacex-command-center.netlify.app/](https://spacex-command-center.netlify.app/)  
+A SpaceX info site built with Command Center UI style. More development will come in the future.
 
-In the project directory, you can run:
+## Motivation
+Made for a technical interview. I also really like to try out some of the APIs and have a single pages with loads of APIs. An API fest if you will. I also want to practice with Thunk and Redux.
 
-### `yarn start`
+## Getting Started
+These instructions will guild you through the inital setting up process and 
+highlight what the apps can do for you to explore on your own.  
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Notable feature
+- Tons of APIs: weather, stocks, job, SpaceX info, geocoding, video, social media. 
+- SpaceX API
+- Stock API (coming soon)
+- Weather API
+- Job API - adzula
+- Arcgis API
+- Youtube API
+- Quiz API 
+- Reddit API
+- Twitter API (coming soon)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prequesite
+Nodejs installed for local running purpose    
+check out Node installation instruction [here](https://nodejs.org/en/)  
+Netlify set up if you would like to continuous deploy and host your own client side app
+check out Netlify instruction [here](https://www.netlify.com/)  
+Or you use any other hostin site, including github page (the site is static anyway)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installing and Running
+Clone the repo
+```
+$ git clone https://github.com/zahego/Covid-Tracker-19.git
+```
+Run Node command to create node_modules folder from the information in package.json, which hold all the necessary dependencies
+```
+$ npm install
+```
+Run Node command for local testing
+```
+$ npm start
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Deploying on Netlify
+access the client folder  
+create a prouction build of the app
+```
+$ yarn build
+```
+install Netlify on your local repo
+```
+$ npm install netlify-cli -g
+```
+login to your Netlify account
+```
+$ netlify login
+```
+start the deploy process
+```
+$ netlify deploy
+```
+choose the option to Create and Config a new site  
+change the site name to your preference  
+set the deploy path to   
+```
+$ ./build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## What you can do
+- Check out the countdown and info of the upcoming launch
+- Search for SpaceX launches and rockets
+- Search for more SpaceX info (coming soon)
+- Watch video about SpaceX
+- Check SpaceX stocks
+- Look for some job at spaceX
+- Play around with the map and geocoding
+- Read some social media content
+- Answer some quiz (coming soon)
+- Read Blogs (coming soon)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Future Content
+- More sections (each API content will have a section)
+- Better UI rendering
+- Firebase incorporation
+- Medical API perhaps? Also insurance and plane API
+- Music auto play upon opening the page
+- Testing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technologies stack
+- [React](https://reactjs.org/) - framework
+- [react-redux](https://react-redux.js.org/) - state management with flux design pattern
+- [redux-thunk](https://github.com/reduxjs/redux-thunk) - help reducer stay as a pure function and do side effect logic from outside
+- [Material-UI] - a react framework that provides beautiful components
+- [firebase](https://firebase.google.com/docs) -handling back end and authentication(coming soon)
+- [mocha-chai] -testing framework (coming soon)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributors
+Minh Tran 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## License
+This project is licensed under the MIT License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Challenges and resolutions
+- Hosting on netlify. For some reason, all my warning is turned into error and to run this, no warning must exist.
+- SpaceX API doesnt provide search function so I work around this by using normal HTTP get command and compare the searched term with data from get. Not too optimize but it works :))
+- Thunk gives me a lot of issues. But at least I'm more used to redux and thunk now.
+- Page loaded over HTTPS but requested an insecure XMLHttpRequest endpoint. I haven't resolved this but I'm thinking of using firebase. 
